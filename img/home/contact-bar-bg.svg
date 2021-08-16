@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="397" height="551" viewBox="0 0 397 551">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3407" data-name="Rectangle 3407" width="397" height="551" transform="translate(1523 8731)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0.29"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_1332" data-name="Rectangle 1332" width="3971" height="2543" transform="translate(-0.388 0.061)" fill="#f2f5ff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="Rectangle_1330" data-name="Rectangle 1330" width="3971" height="1501" transform="translate(0 -0.353)" fill="#f2f5ff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <rect id="Rectangle_1331" data-name="Rectangle 1331" width="5442" height="1497" transform="translate(0 0.065)" fill="#f2f5ff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_49" data-name="Mask Group 49" transform="translate(-1523 -8731)" clip-path="url(#clip-path)">
+    <g id="Group_7092" data-name="Group 7092">
+      <g id="Mask_Group_44" data-name="Mask Group 44" transform="translate(-2200.612 7781.121)" clip-path="url(#clip-path-2)">
+        <g id="Group_5393" data-name="Group 5393" transform="translate(-1471.388 23.414)">
+          <g id="Mask_Group_42" data-name="Mask Group 42" transform="translate(1471 0)" clip-path="url(#clip-path-3)">
+            <path id="Path_20232" data-name="Path 20232" d="M4.473-168.948S-91.064,204.18,1388.389-127.142s1193.545,457.124,2276.6,137.893S4395.231,25.52,4395.231,25.52l-67.371,1232.85H4.473Z" transform="translate(-2.834 221.022)" fill="#f2f5ff"/>
+          </g>
+          <g id="Mask_Group_43" data-name="Mask Group 43" transform="translate(0 993.581)" clip-path="url(#clip-path-4)">
+            <path id="Path_20233" data-name="Path 20233" d="M6095.8,1217.114s130.928-373.128-1896.59-41.807-1635.7-457.124-3119.977-137.893S78.474,1022.645,78.474,1022.645L170.8-210.2H6095.8Z" transform="translate(-656.207 229.827)" fill="#f2f5ff"/>
+          </g>
+        </g>
+      </g>
+      <path id="Path_273" data-name="Path 273" d="M1033.078,213.245c577.9.571,1051.827,188.757,1051.827,656.491s-466.722,846.907-1042.453,846.907S0,1337.47,0,869.736,455.175,212.674,1033.078,213.245Z" transform="translate(-132.999 8603.271)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
