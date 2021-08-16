@@ -344,10 +344,6 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .home-services {
-    overflow: hidden;
-  }
-
   .home-services .container {
     padding-bottom: 11vw;
   }
@@ -385,6 +381,7 @@ body {
   .home-services {
     padding-top: 8vw;
     padding-bottom: 23.33vw;
+    overflow: hidden;
   }
 
   .home-services .circle {
