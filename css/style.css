@@ -163,6 +163,10 @@ body {
   border-radius: 500px;
 }
 
+.header-links .search img {
+  width: 1.25vw;
+}
+
 @media (max-width: 1023.98px) {
   .header {
     padding: 2.66vw 0;
@@ -215,6 +219,10 @@ body {
   border-radius: 1.3vw;
   overflow: hidden;
   box-shadow: 0 45px 73px rgba(0, 0, 0, .05);
+}
+
+.home-banner .video video {
+  width: 100%;
 }
 
 .home-banner .video a {
@@ -518,6 +526,10 @@ body {
   flex: 0 0 28.6vw;
 }
 
+.home-services-2 .img img {
+  width: 100%;
+}
+
 .home-services-2 .bg,
 .home-services-2 .bg img,
 .home-services-2 .bg picture {
@@ -728,6 +740,10 @@ body {
   padding: .5vw;
   overflow: hidden;
   position: absolute;
+}
+
+.home-customers .logo img {
+  width: 100%;
 }
 
 .home-customers .logo-lg {
@@ -948,6 +964,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 .home-technologies h2 {
@@ -960,7 +977,7 @@ body {
 }
 
 .home-technologies .links {
-  margin-bottom: 3.125vw;
+  margin-bottom: 3.9vw;
   display: flex;
   align-items: center;
 }
@@ -973,8 +990,23 @@ body {
   margin-left: 2.6vw;
 }
 
+.home-technologies .bg,
+.home-technologies .bg img,
+.home-technologies .bg picture {
+  width: 100%;
+}
+
 @media (max-width: 1023.98px) {
+  .home-technologies {
+    overflow: hidden;
+  }
+
   .home-technologies .container {
+    width: 100%;
+  }
+
+  .home-technologies .text {
+    margin: 0 auto;
     width: 86%;
   }
 
@@ -992,7 +1024,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0 -2vw;
-    margin-bottom: 10vw;
+    margin-bottom: 20vw;
   }
   
   .home-technologies .links a {
@@ -1077,6 +1109,10 @@ body {
   justify-content: center;
   background-color: #F7F7F7;
   padding: .5vw;
+}
+
+.reviews .customer .logo img {
+  width: 100%;
 }
 
 @media (max-width: 1023.98px) {
@@ -1385,5 +1421,131 @@ body {
   
   .video-modal .modal-close img {
     width: 7.34vw;
+  }
+}
+
+/* #Logos
+================================================== */
+.home-technologies .logos {
+  width: 100%;
+  margin-bottom: 6.7vw;
+  overflow: hidden;
+  position: relative;
+  width: 79%;
+  height: 14.33vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-technologies .logos::after,
+.home-technologies .logos::before {
+  content: '';
+  position: absolute;
+  width: 42.44vw;
+  height: 100%;
+  z-index: 10;
+}
+
+.home-technologies .logos::after {
+  top: 0;
+  left: -2px;
+  background-image: linear-gradient(to right,#111C4E, transparent);
+}
+
+.home-technologies .logos::before {
+  top: 0;
+  right: -2px;
+  background-image: linear-gradient(to left,#111C4E, transparent);
+}
+
+.home-technologies .logos ul {
+  display: flex;
+}
+
+.home-technologies .logos .group {
+  transform: translateX(100%);
+  backface-visibility: hidden;
+
+  animation: move 20s linear infinite;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.home-technologies .logos .group:nth-child(2) { animation-delay: 1.65s; }
+.home-technologies .logos .group:nth-child(3) { animation-delay: 3.3s; }
+.home-technologies .logos .group:nth-child(4) { animation-delay: 4.95s; }
+.home-technologies .logos .group:nth-child(5) { animation-delay: 6.6s; }
+.home-technologies .logos .group:nth-child(6) { animation-delay: 8.25s; }
+.home-technologies .logos .group:nth-child(7) { animation-delay: 9.9s; }
+.home-technologies .logos .group:nth-child(8) { animation-delay: 11.55s; }
+.home-technologies .logos .group:nth-child(9) { animation-delay: 13.2s; }
+.home-technologies .logos .group:nth-child(10) { animation-delay: 14.85s; }
+.home-technologies .logos .group:nth-child(11) { animation-delay: 16.5s; }
+.home-technologies .logos .group:nth-child(12) { animation-delay: 18.15s; }
+
+.home-technologies .logos .group:not(:last-child) {
+  margin-right: .5vw;
+}
+
+.home-technologies .logos .group:nth-child(odd) {
+  margin-top: 1.5vw;
+}
+
+.home-technologies .logos .logo {
+  width: 6.1vw;
+  height: 6.1vw;
+  background-color: white;
+  border-radius: .78vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: .25vw;
+}
+
+.home-technologies .logos .logo:first-child {
+  margin-bottom: .5vw;
+}
+
+.home-technologies .logos .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: .78vw;
+}
+
+@keyframes move { to { transform: translateX(-1300%); } }
+
+@media (max-width: 1023.98px) {
+  .home-technologies .logos {
+    margin-bottom: 25vw;
+    width: 100%;
+    height: 47vw;
+  }
+
+  .home-technologies .logos .logo {
+    width: 19.73vw;
+    height: 19.73vw;
+    border-radius: 2vw;
+    padding: 1vw;
+  }
+  
+  .home-technologies .logos .logo:first-child {
+    margin-bottom: 2.13vw;
+  }
+  
+  .home-technologies .logos .logo img {
+    border-radius: 2vw;
+  }
+
+  .home-technologies .logos .group:not(:last-child) {
+    margin-right: 2vw;
+  }
+  
+  .home-technologies .logos .group:nth-child(odd) {
+    margin-top: 4.66vw;
   }
 }
