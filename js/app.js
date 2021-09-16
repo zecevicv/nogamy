@@ -107,3 +107,24 @@ if (document.querySelector('.blog-posts-slider .swiper-container')) {
     },
   });
 }
+
+/* #Scroll To
+================================================== */
+if (document.querySelector('.scroll-to-links')) {
+
+  // Handling link clicks
+  const scrollToLinks = document.querySelectorAll('.scroll-to-links a');
+
+  scrollToLinks.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      const id = link.hash;
+      const yOffset = -200; 
+      const element = document.querySelector(id);
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+      window.scrollTo({top: y, behavior: 'smooth'});
+    });
+  });
+}
