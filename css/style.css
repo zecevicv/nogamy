@@ -18,6 +18,10 @@ body {
   color: #B6E000;
 }
 
+.text-red {
+  color: #FF0163;
+}
+
 /* #Buttons
 ================================================== */
 .btn {
@@ -213,27 +217,14 @@ body {
   padding-right: 6.45vw;
 }
 
-.banner .video {
+.banner .img {
   position: relative;
   flex: 0 0 44.11vw;
-  border-radius: 1.3vw;
-  overflow: hidden;
-  box-shadow: 0 45px 73px rgba(0, 0, 0, .05);
 }
 
-.banner .video video {
+.banner .img img,
+.banner .img picture {
   width: 100%;
-}
-
-.banner .video a {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.banner .video a img {
-  width: 8.22vw;
 }
 
 .banner .text {
@@ -265,14 +256,10 @@ body {
     padding-right: 0;
   }
 
-  .banner .video {
+  .banner .img {
     flex: 0;
     border-radius: 3.33vw;
     margin-top: 12vw;
-  }
-
-  .banner .video a img {
-    width: 18vw;
   }
 
   .banner h1 {
@@ -1687,5 +1674,200 @@ body {
   
   .customers .text {
     margin-bottom: 8vw;
+  }
+}
+
+/* #Blog Navigation
+================================================== */
+.blog-navigation {
+  padding: 4.7vw 0 9.37vw 0;
+}
+
+.blog-navigation .container {
+  width: 68%;
+}
+
+.blog-navigation ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blog-navigation a {
+  height: 2.6vw;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1vw;
+  border-radius: 500px;
+  color: #888AA7;
+  font-size: 1.04vw;
+  text-decoration: underline;
+}
+
+.blog-navigation a.active {
+  padding: 0 2vw;
+  color: white;
+  background-color: #FF0063;
+  text-decoration: none;
+  margin: 0 1vw;
+}
+
+.blog-navigation li:first-child a {
+  margin-right: 0;
+}
+
+.blog-navigation li:first-child a:not(.active) {
+  padding-right: 0;
+}
+
+@media (max-width: 1023.98px) {
+  .blog-navigation {
+    padding: 16vw 0 12vw 0;
+  }
+  
+  .blog-navigation .container {
+    width: 90%;
+  }
+
+  .blog-navigation ul {
+    justify-content: center;
+  }
+
+  .blog-navigation a {
+    height: 6.66vw;
+    padding: 0 6vw;
+    font-size: 4vw;
+    margin: 1vw 0;
+  }
+  
+  .blog-navigation a.active {
+    padding: 0 8vw;
+    color: white;
+    background-color: #FF0063;
+    text-decoration: none;
+    margin: 0 2vw;
+  }
+}
+
+/* #Blog Posts
+================================================== */
+.blog-posts {
+  margin-bottom: 10vw;
+}
+
+.blog-posts .container {
+  width: 68%;
+}
+
+.blog-posts .blog-post {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.blog-posts .blog-post:not(:last-child) {
+  margin-bottom: 5.5vw;
+}
+
+.blog-posts .blog-post .img {
+  flex: 0 0 34.16vw;
+}
+
+.blog-posts .blog-post .img img {
+  border-radius: 1.3vw;
+  height: 21.87vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+.blog-posts .blog-post .text {
+  flex: 0 0 25vw;
+}
+
+.blog-posts .blog-post .post-meta {
+  border-right: 1px solid #FF0163;
+  line-height: 1.4;
+  padding-right: 1vw;
+}
+
+.blog-posts .blog-post .post-title {
+  line-height: 1;
+  margin: 2.5vw 0 1.3vw 0;
+}
+
+.blog-posts .blog-post .post-excerpt {
+  margin-bottom: 2vw;
+  line-height: 1.5;
+}
+
+.blog-posts .blog-post .post-link a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.blog-posts .blog-post .post-link a img {
+  width: .46vw;
+  margin-right: .7vw;
+}
+
+@media (max-width: 1023.98px) {
+  .blog-posts {
+    margin-bottom: 20vw;
+  }
+  
+  .blog-posts .container {
+    width: 90%;
+  }
+
+  .blog-posts .blog-post {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    box-shadow: 0 3px 23px rgba(0, 0, 0, .16);
+    border-radius: 3.33vw;
+    overflow: hidden;
+  }
+  
+  .blog-posts .blog-post:not(:last-child) {
+    margin-bottom: 10.66vw;
+  }
+  
+  .blog-posts .blog-post .img {
+    flex: 0 0 100%;
+  }
+  
+  .blog-posts .blog-post .img img {
+    border-radius: 0;
+    height: 57.33vw;
+  }
+  
+  .blog-posts .blog-post .text {
+    flex: 0 0 100%;
+    padding: 6.66vw;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .blog-posts .blog-post .post-meta {
+    border-right: none;
+    padding-right: 0;
+  }
+  
+  .blog-posts .blog-post .post-title {
+    margin: 4vw 0 2vw 0;
+  }
+  
+  .blog-posts .blog-post .post-excerpt {
+    margin-bottom: 5vw;
+  }
+
+  .blog-posts .blog-post .post-link {
+    margin-right: auto;
+  }
+  
+  .blog-posts .blog-post .post-link a img {
+    width: 1.46vw;
+    margin-right: 1.46vw;
   }
 }
