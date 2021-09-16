@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <filter id="Ellipse_1747" x="0" y="0" width="60" height="60" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#0038d1" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_7464" data-name="Group 7464" transform="translate(-1026 -2146)">
+    <g transform="matrix(1, 0, 0, 1, 1026, 2146)" filter="url(#Ellipse_1747)">
+      <circle id="Ellipse_1747-2" data-name="Ellipse 1747" cx="21" cy="21" r="21" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <g id="Group_7460" data-name="Group 7460" transform="translate(-417 1151)">
+      <g id="Group_7459" data-name="Group 7459" transform="translate(1464 1013)">
+        <path id="Path_23031" data-name="Path 23031" d="M765.813,641.583a3.14,3.14,0,0,0-3.136,3.136c0,.106.006.212.016.315a3.153,3.153,0,0,0,5.672,1.5h0a3.131,3.131,0,0,0-2.554-4.95Z" transform="translate(-762.677 -635.843)" fill="#020202" fill-rule="evenodd"/>
+        <path id="Path_23032" data-name="Path 23032" d="M794.962,631.128a3.173,3.173,0,1,0-6.224.83l-.006,0a3.253,3.253,0,0,0,.587,1.151c.029.038.06.074.092.11.045.052.09.1.138.152.023.023.047.045.071.068.058.056.116.111.179.162l.005,0a3.261,3.261,0,0,0,.4.276c.044.026.086.054.131.078.029.016.059.028.088.042.086.042.173.083.263.118l.005,0a3.1,3.1,0,0,0,1.1.2A3.184,3.184,0,0,0,794.962,631.128Z" transform="translate(-777.71 -627.931)" fill="#020202" fill-rule="evenodd"/>
+        <path id="Path_23033" data-name="Path 23033" d="M781.436,637.869l-4.914,2.534a3.459,3.459,0,0,1,.581,1.056l4.871-2.511A3.558,3.558,0,0,1,781.436,637.869Z" transform="translate(-770.701 -633.691)" fill="#020202" fill-rule="evenodd"/>
+        <path id="Path_23034" data-name="Path 23034" d="M795.143,657.731a3.2,3.2,0,0,0-1.6-2.774,3.136,3.136,0,1,0,.5,5.19A3.2,3.2,0,0,0,795.143,657.731Z" transform="translate(-777.89 -643.377)" fill="#020202" fill-rule="evenodd"/>
+        <path id="Path_23035" data-name="Path 23035" d="M782.32,653.637l-4.936-2.544a3.428,3.428,0,0,1-.5,1.1l4.893,2.523A3.442,3.442,0,0,1,782.32,653.637Z" transform="translate(-770.911 -641.354)" fill="#020202" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>

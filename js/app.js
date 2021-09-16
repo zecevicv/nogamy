@@ -88,3 +88,22 @@ if (videoModal) {
     }
   });
 }
+
+/* #Blog Posts Slider
+======================================================= */
+if (document.querySelector('.blog-posts-slider .swiper-container')) {
+  new Swiper('.blog-posts-slider .swiper-container', {
+    breakpoints: {
+      0: {
+        slidesPerView: 1
+      },
+      1024: {
+        slidesPerView: 3
+      }
+    },
+    navigation: {
+      nextEl: '.blog-posts-slider .swiper-arrows .right',
+      prevEl: '.blog-posts-slider .swiper-arrows .left',
+    },
+  });
+}
