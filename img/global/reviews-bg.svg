@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="226" viewBox="0 0 1920 226">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1653" data-name="Rectangle 1653" width="1920" height="226" transform="translate(0 7478)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_1290" data-name="Rectangle 1290" width="3971" height="2543" transform="translate(-0.388 0.061)" fill="#f2f5ff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="Rectangle_1288" data-name="Rectangle 1288" width="3971" height="1501" transform="translate(0 -0.353)" fill="#f2f5ff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <rect id="Rectangle_1289" data-name="Rectangle 1289" width="5442" height="1497" transform="translate(0 0.065)" fill="#f2f5ff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_55" data-name="Mask Group 55" transform="translate(0 -7478)" clip-path="url(#clip-path)">
+    <g id="Mask_Group_40" data-name="Mask Group 40" transform="translate(-132.611 7446.955)" clip-path="url(#clip-path-2)">
+      <g id="Group_5159" data-name="Group 5159" transform="translate(-1471.388 23.414)">
+        <g id="Mask_Group_38" data-name="Mask Group 38" transform="translate(1471 0)" clip-path="url(#clip-path-3)">
+          <path id="Path_20021" data-name="Path 20021" d="M4.473-168.948S-91.064,204.18,1388.389-127.142s1193.545,457.124,2276.6,137.893S4395.231,25.52,4395.231,25.52l-67.371,1232.85H4.473Z" transform="translate(-2.834 221.022)" fill="#f2f5ff"/>
+        </g>
+        <g id="Mask_Group_39" data-name="Mask Group 39" transform="translate(0 993.581)" clip-path="url(#clip-path-4)">
+          <path id="Path_20022" data-name="Path 20022" d="M6095.8,1217.114s130.928-373.128-1896.59-41.807-1635.7-457.124-3119.977-137.893S78.474,1022.645,78.474,1022.645L170.8-210.2H6095.8Z" transform="translate(-656.207 229.827)" fill="#f2f5ff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
