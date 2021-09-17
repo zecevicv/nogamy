@@ -3388,3 +3388,235 @@ body.overlay::after {
     margin-right: 5vw;
   }
 }
+
+/* #Case Study
+================================================== */
+.case-study {
+  padding: 4.4vw 0 6.25vw 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.case-study::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 9.6vw;
+  background-image: url('../img/case-study/case-study-bg.svg');
+  z-index: -1;
+}
+
+.case-study .container {
+  width: 73%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.case-study .sidebar {
+  flex: 0 0 24vw;
+  padding-left: 11vw;
+}
+
+.case-study .sidebar .collapse-toggler {
+  margin-bottom: 1vw;
+}
+
+.case-study .sidebar .accordion:not(:last-child) {
+  margin-bottom: 1.5vw;
+}
+
+.case-study .sidebar ul {
+  margin-bottom: 1.5vw;
+}
+
+.case-study .sidebar li {
+  display: flex;
+  align-items: center;
+  line-height: 1.8;
+}
+
+.case-study .sidebar img {
+  width: 2.35vw;
+  height: 1.4vw;
+  object-fit: contain;
+  object-position: center;
+  margin-left: 1vw;
+}
+
+.case-study .heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1vw;
+}
+
+.case-study .num {
+  width: 3vw;
+  height: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+  margin-left: 1.5vw;
+}
+
+.case-study .main-list > li:not(:last-child) {
+  margin-bottom: 3.125vw;
+}
+
+.case-study .collapsible-panel {
+  background-color: #E9F6B2;
+  border-radius: 1vw;
+  padding: 2vw;
+}
+
+.case-study .collapsible-panel .collapsible:not(:last-child) {
+  margin-bottom: 1.3vw;
+}
+
+.case-study .collapsible-panel .collapse-toggler {
+  display: flex;
+  align-items: center;
+}
+
+.case-study .collapsible-panel .collapse-toggler img {
+  width: 2vw;
+  margin-left: 1vw;
+  transform: rotate(0);
+  transition: all .4s ease;
+}
+
+.case-study .collapsible-panel .show .collapse-toggler img {
+  transform: rotate(180deg);
+}
+
+.case-study .collapsible-panel .collapse > div {
+  padding-top: 1vw;
+  padding-right: 3vw;
+}
+
+.case-study .bg {
+  width: 43%;
+  position: absolute;
+  bottom: 6.25vw;
+  right: -9.375vw;
+}
+
+.case-study .bg img {
+  width: 100%;
+}
+
+.case-study .main-list > li:nth-child(1) .num {
+  background-color: #FF0063;
+}
+
+.case-study .main-list > li:nth-child(2) .num {
+  background-color: #111C4E;
+}
+
+.case-study .main-list > li:nth-child(3) .num {
+  background-color: #B6E000;
+  color: black;
+}
+
+@media (min-width: 1024px) {
+  .case-study .sidebar .collapse {
+    height: auto!important;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .case-study {
+    padding: 5.33vw 0 18vw 0;
+  }
+  
+  .case-study::after {
+    display: none;
+    content: none;
+  }
+  
+  .case-study .container {
+    width: 90%;
+    display: block;
+  }
+
+  .case-study .sidebar {
+    padding-left: 0;
+    margin-bottom: 11.33vw;
+  }
+  
+  .case-study .sidebar .collapse-toggler {
+    margin-bottom: 2.66vw;
+    display: flex;
+    align-items: center;
+  }
+  
+  .case-study .sidebar .accordion:not(:last-child) {
+    margin-bottom: 3vw;
+  }
+
+  .case-study .sidebar .collapse-toggler img {
+    width: 3vw;
+    margin-right: 6vw;
+    transition: all .4s ease;
+    transform: rotate(0);
+  }
+
+  .case-study .sidebar .show .collapse-toggler img {
+    transform: rotate(180deg);
+  }
+  
+  .case-study .sidebar ul {
+    margin-bottom: 5vw;
+  }
+  
+  .case-study .sidebar img {
+    width: 12vw;
+    height: 10vw;
+    margin-left: 6vw;
+  }
+
+  .case-study .heading {
+    margin-bottom: 5.33vw;
+  }
+  
+  .case-study .num {
+    width: 7.6vw;
+    height: 7.6vw;
+    margin-left: 4.6vw;
+  }
+  
+  .case-study .main-list > li:not(:last-child) {
+    margin-bottom: 12vw;
+  }
+  
+  .case-study .collapsible-panel {
+    border-radius: 2.66vw;
+    padding: 5.33vw;
+  }
+  
+  .case-study .collapsible-panel .collapsible:not(:last-child) {
+    margin-bottom: 4.66vw;
+  }
+  
+  .case-study .collapsible-panel .collapse-toggler {
+    align-items: flex-start;
+  }
+  
+  .case-study .collapsible-panel .collapse-toggler img {
+    width: 7.6vw;
+    margin-left: 5vw;
+  }
+  
+  .case-study .collapsible-panel .collapse > div {
+    padding-top: 2vw;
+    padding-right: 12.6vw;
+  }
+
+  .case-study .bg {
+    display: none;
+  }
+}
