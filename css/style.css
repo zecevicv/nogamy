@@ -277,6 +277,15 @@ body.overlay::after {
   width: 100%;
 }
 
+.banner .logo {
+  width: 8.33vw;
+  margin-bottom: 1.5vw;
+}
+
+.banner .logo img {
+  width: 100%;
+}
+
 @media (max-width: 1023.98px) {
   .banner .container {
     top: 25vw;
@@ -294,7 +303,7 @@ body.overlay::after {
   }
 
   .banner h1 {
-    margin-bottom: 6.66vw;
+    margin-bottom: 3.66vw;
   }
   
   .banner p {
@@ -303,6 +312,11 @@ body.overlay::after {
 
   .banner p:first-child {
     margin-bottom: 3vw;
+  }
+
+  .banner .logo {
+    width: 30vw;
+    margin-bottom: 3.33vw;
   }
 }
 
@@ -1158,7 +1172,8 @@ body.overlay::after {
   overflow: hidden;
 }
 
-.projects-page .reviews {
+.projects-page .reviews,
+.case-study-page .reviews {
   margin-top: 0;
   padding-top: 0;
 }
@@ -3175,5 +3190,201 @@ body.overlay::after {
   
   .jobs-accordion .collapse p {
     margin-bottom: 7.33vw;
+  }
+}
+
+/* #Services Slider
+================================================== */
+.services-slider {
+  background-color: #F2F5FF;
+  padding-bottom: 8vw;
+}
+
+.services-slider .container {
+  width: 88%;
+}
+
+.services-slider h2 {
+  text-align: center;
+  margin-bottom: 1.8vw;
+}
+
+.services-slider .swiper-container {
+  margin: -1vw;
+}
+
+.services-slider .swiper-slide {
+  padding: 1vw;
+  height: auto;
+}
+
+.services-slider .swiper-slide > div {
+  background-color: white;
+  border-radius: 1vw;
+  height: 100%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .05);
+  display: flex;
+  align-items: center;
+  padding: 1.5vw;
+}
+
+.services-slider .img {
+  flex: 0 0 10.4vw;
+  height: 10.4vw;
+  width: 10.4vw;
+}
+
+.services-slider .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+ 
+.services-slider .text {
+  flex-grow: 1;
+  padding-right: 2vw;
+}
+
+.services-slider .text p:first-child {
+  margin-bottom: .5vw;
+}
+
+.services-slider .text a {
+  margin-top: 1.5vw;
+}
+
+@media (min-width: 1024px) {
+  .services-slider .swiper-arrows {
+    display: none;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .services-slider {
+    padding-bottom: 20vw;
+  }
+  
+  .services-slider .container {
+    width: 90%;
+  }
+  
+  .services-slider h2 {
+    margin-bottom: 8.66vw;
+  }
+  
+  .services-slider .swiper-container {
+    margin: 0;
+  }
+  
+  .services-slider .swiper-slide {
+    padding: 0;
+  }
+  
+  .services-slider .swiper-slide > div {
+    border-radius: 2.66vw;
+    padding: 5.33vw;
+  }
+  
+  .services-slider .img {
+    flex: 0 0 32vw;
+    height: 32vw;
+    width: 32vw;
+  }
+   
+  .services-slider .text {
+    padding-right: 5.33vw;
+  }
+  
+  .services-slider .text p:first-child {
+    margin-bottom: 2vw;
+  }
+  
+  .services-slider .text a {
+    margin-top: 4vw;
+  }
+
+  .services-slider .swiper-arrows {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top:8.66vw;
+  }
+
+  .services-slider .swiper-arrows img {
+    width: 8vw;
+  }
+
+  .services-slider .swiper-arrows .left {
+    margin-right: 5vw;
+  }
+}
+
+/* #Projects Slider
+================================================== */
+.projects-slider {
+  padding: 4.4vw 0;
+}
+
+.projects-slider .container {
+  width: 83%;
+}
+
+.projects-slider h2 {
+  text-align: center;
+  margin-bottom: 3.9vw;
+}
+
+.projects-slider .swiper-container {
+  margin: 0 -1.4vw;
+}
+
+.projects-slider .swiper-slide {
+  padding: 0 1.4vw;
+}
+
+.projects-slider .swiper-slide img {
+  width: 100%;
+  margin-bottom: 1.75vw;
+}
+
+@media (min-width: 1024px) {
+  .projects-slider .swiper-arrows {
+    display: none;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .projects-slider {
+    padding:10vw 0;
+  }
+  
+  .projects-slider .container {
+    width: 90%;
+  }
+  
+  .projects-slider h2 {
+    margin-bottom: 8.66vw;
+  }
+
+  .projects-slider .swiper-slide img {
+    margin-bottom: 4.66vw;
+  }
+
+  .projects-slider .swiper-arrows {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12vw;
+  }
+
+  .projects-slider .swiper-arrows img {
+    width: 8vw;
+  }
+
+  .projects-slider .swiper-arrows .left {
+    margin-right: 5vw;
   }
 }

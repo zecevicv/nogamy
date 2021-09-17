@@ -177,3 +177,41 @@ if (document.querySelector('.jobs-gallery .swiper-container')) {
     },
   });
 }
+
+/* #Jobs Gallery
+======================================================= */
+if (document.querySelector('.services-slider .swiper-container')) {
+  new Swiper('.services-slider .swiper-container', {
+    breakpoints: {
+      0: {
+        slidesPerView: 1
+      },
+      1024: {
+        slidesPerView: 3
+      }
+    },
+    navigation: {
+      nextEl: '.services-slider .swiper-arrows .left',
+      prevEl: '.services-slider .swiper-arrows .right',
+    },
+  });
+}
+
+/* #Projects Slider
+======================================================= */
+if (document.querySelector('.projects-slider .swiper-container')) {
+  new Swiper('.projects-slider .swiper-container', {
+    breakpoints: {
+      0: {
+        slidesPerView: 1
+      },
+      1024: {
+        slidesPerView: 3
+      }
+    },
+    navigation: {
+      nextEl: '.projects-slider .swiper-arrows .left',
+      prevEl: '.projects-slider .swiper-arrows .right',
+    },
+  });
+}
