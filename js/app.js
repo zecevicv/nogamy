@@ -128,3 +128,27 @@ if (document.querySelector('.scroll-to-links')) {
     });
   });
 }
+
+/* #About Team
+================================================== */
+const personList = document.querySelector('.about-team .person-list');
+
+personList.addEventListener('click', (e) => {
+  if (e.target.closest('.open')) {
+    e.preventDefault();
+    const person = e.target.closest('.person');
+
+    person.classList.add('show');
+    body.classList.add('overlay');
+    body.classList.add('no-scroll');
+  } 
+
+  if (e.target.closest('.close')) {
+    e.preventDefault();
+    const person = e.target.closest('.person');
+
+    person.classList.remove('show');
+    body.classList.remove('overlay');
+    body.classList.remove('no-scroll');
+  }
+});
