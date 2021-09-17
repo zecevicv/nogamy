@@ -2484,34 +2484,199 @@ body {
   }
 }
 
+/* #Specializations
+================================================== */
+.specializations {
+  padding: 4.7vw 0 8.33vw 0;
+}
 
+.specializations .container {
+  width: 83%;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
 
+.specializations .sidebar {
+  flex: 0 0 14.32vw;
+  position: sticky;
+  top: 10.4vw;
+}
 
+.specializations .sidebar p {
+  height: 2.6vw;
+  border-radius: 500px;
+  color: #888AA7;
+  font-size: 1.04vw;
+  padding: 0 2vw;
+  color: white;
+  background-color: #FF0063;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
+.specializations .sidebar a {
+  color: #888AA7;
+  font-size: 1.04vw;
+}
 
+.specializations .sidebar p,
+.specializations .sidebar li:not(:last-child) {
+  margin-bottom: 1.75vw;
+}
 
+.specializations .sidebar ul {
+  max-width: 75%;
+}
 
+.specializations .main {
+  flex-grow: 1;
+}
 
+.specializations .accordion {
+  box-shadow: 0 3px 23px rgba(0, 0, 0, .16);
+  border-radius: 1vw;
+  padding: 2.86vw 3.38vw;
+}
 
+.specializations .accordion:not(:last-child) {
+  margin-bottom: 1.92vw;
+}
 
+.specializations .accordion h3 {
+  margin-bottom: 1.3vw;
+}
 
+.specializations .accordion .collapse ul li::before {
+  content: '•';
+  color: #FF0063;
+}
 
+@media (min-width: 1024px) {
+  .specializations .collapsible {
+    display: flex;
+  }
 
+  .specializations .collapse-toggler {
+    flex: 0 0 14.3vw;
+  }
 
+  .specializations .collapse-toggler .name {
+    width: 11vw;
+    height: 11vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+  }
 
+  .specializations .accordion:nth-child(1) .collapse-toggler .name {
+    background-color: #FF0063; color: white;
+  }
+  .specializations .accordion:nth-child(2) .collapse-toggler .name {
+    background-color: #FF3D88; color: white;
+  }
+  .specializations .accordion:nth-child(3) .collapse-toggler .name {
+    background-color: #CC295E; color: white;
+  }
+  .specializations .accordion:nth-child(4) .collapse-toggler .name {
+    background-color: #E5F4A6; color: black;
+  }
+  .specializations .accordion:nth-child(5) .collapse-toggler .name {
+    background-color: #C9E842; color: black;
+  }
+  .specializations .accordion:nth-child(6) .collapse-toggler .name {
+    background-color: #B6E000; color: black;
+  }
+  .specializations .accordion:nth-child(7) .collapse-toggler .name {
+    background-color: #2C3662; color: white;
+  }
+
+  .specializations .collapse {
+    height: auto!important;
+  }
+}
 
 @media (max-width: 1023.98px) {
-  .blog-navigation {
-    padding: 16vw 0 12vw 0;
+  .specializations {
+    padding: 14.66vw 0 17.33vw 0;
   }
   
-  .blog-navigation .container {
+  .specializations .container {
     width: 90%;
+    display: block;
   }
 
-  .blog-navigation ul {
-    justify-content: center;
+  .specializations .accordion {
+    border-radius: 2.66vw;
+    padding: 6vw;
+    box-shadow: 0 3px 2vw rgba(0, 0, 0, .16);
   }
-
   
+  .specializations .accordion:not(:last-child) {
+    margin-bottom: 1.6vw;
+  }
+
+  .specializations .collapse-toggler {
+    display: flex;
+    align-items: center;
+  }
+
+  .specializations .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 7.5vw;
+    height: 7.5vw;
+    margin-left: 5vw;
+  }
+
+  .specializations .arrow img {
+    width: 3vw;
+    transform: rotate(0);
+    transform-origin: 50% 50%;
+    transition: all .4s ease;
+  }
+
+  .specializations .show .arrow img {
+    transform: rotate(180deg);
+  }
+
+  .specializations .accordion:nth-child(1)  .arrow {
+    background-color: #FF0063;
+  }
+  .specializations .accordion:nth-child(2)  .arrow {
+    background-color: #FF3D88;
+  }
+  .specializations .accordion:nth-child(3)  .arrow {
+    background-color: #CC295E;
+  }
+  .specializations .accordion:nth-child(4)  .arrow {
+    background-color: #E5F4A6;
+  }
+  .specializations .accordion:nth-child(5)  .arrow {
+    background-color: #C9E842;
+  }
+  .specializations .accordion:nth-child(6)  .arrow {
+    background-color: #B6E000;
+  }
+  .specializations .accordion:nth-child(7)  .arrow {
+    background-color: #2C3662;
+  }
+
+  .specializations .name {
+    color: #111C4E;
+  }
+
+  .specializations .collapse > div {
+    padding-top: 3vw;
+  }
+
+  .specializations .accordion h3 {
+    margin-bottom: 2vw;
+  }
 }
