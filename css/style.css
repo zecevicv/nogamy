@@ -2889,3 +2889,291 @@ body.overlay::after {
     transform: translateX(-50%) translateY(-50%);
   }
 }
+
+/* #Jobs Why
+================================================== */
+.jobs-why {
+  margin-bottom: -5.2vw;
+}
+
+.jobs-why .container {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.jobs-why .img {
+  flex: 0 0 22.34vw;
+}
+
+.jobs-why .text {
+  flex: 0 0 24.5vw;
+}
+
+.jobs-why h2 {
+  margin-bottom: 1.5vw;
+  line-height: 1.2;
+}
+
+@media (max-width: 1023.98px) {
+  .jobs-why {
+    margin-bottom: -20vw;
+    padding-top: 12.66vw;
+    text-align: center;
+  }
+  
+  .jobs-why .container {
+    width: 90%;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .jobs-why h2 {
+    margin-bottom: 4vw;
+  }
+
+  .jobs-why .text {
+    margin-bottom: 8.66vw;
+  }
+}
+
+/* #Jobs Gallery
+================================================== */
+.jobs-gallery {
+  height: 55.93vw;
+  background-image: url('../img/jobs/gallery-bg.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.jobs-gallery .text {
+  margin: 0 auto 2.85vw auto;
+  padding-top: 7.3vw;
+  width: 39.68vw;
+}
+
+.jobs-gallery h2 {
+  margin-bottom: 1.3vw;
+  line-height: 1.2;
+}
+
+.jobs-gallery .swiper-slide {
+  height: auto;
+  cursor: grab;
+}
+
+.jobs-gallery .swiper-slide img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.jobs-gallery .swiper-arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.38vw;
+}
+
+.jobs-gallery .swiper-arrows img {
+  width: 2.4vw;
+}
+
+.jobs-gallery .swiper-arrows .right {
+  margin-right: .75vw;
+}
+
+@media (max-width: 1023.98px) {
+  .jobs-gallery {
+    height: 180vw;
+    background-position: 10% 50%;
+    background-repeat: no-repeat;
+  }
+  
+  .jobs-gallery .text {
+    margin: 0 auto 12vw auto;
+    padding-top: 26vw;
+    width: 90%;
+  }
+  
+  .jobs-gallery h2 {
+    margin-bottom: 1.3vw;
+    line-height: 1.2;
+  }
+
+  .jobs-gallery .swiper-arrows {
+    margin-top: 10vw;
+  }
+  
+  .jobs-gallery .swiper-arrows img {
+    width: 11.33vw;
+  }
+  
+  .jobs-gallery .swiper-arrows .right {
+    margin-right: 3vw;
+  }
+}
+
+/* #Jobs Accordion
+================================================== */
+.jobs-accordion {
+  margin: 2vw 0 11.66vw 0;
+}
+
+.jobs-accordion .container {
+  width: 80%;
+}
+
+.jobs-accordion .collapsible {
+  box-shadow: 0 3px 16px rgba(0, 0, 0, .1);
+  border-radius: 1vw;
+  background-color: white;
+  transition: background-color .4s ease;
+  padding: 2vw;
+}
+
+.jobs-accordion .collapsible.show {
+  background-color: #E9F6B2;
+}
+
+.jobs-accordion .collapsible:not(:last-child) {
+  margin-bottom: 1.4vw;
+}
+
+.jobs-accordion .collapse-toggler {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.jobs-accordion .collapse-toggler img {
+  width: 1vw;
+  margin-right: 1vw;
+  transition: all .4s ease;
+  transform: rotate(0);
+}
+
+.jobs-accordion .show .collapse-toggler img {
+  transform: rotate(180deg);
+}
+
+.jobs-accordion .block {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.jobs-accordion .icons,
+.jobs-accordion .icons p {
+  display: flex;
+  align-items: center;
+}
+
+.jobs-accordion .icons p:first-child {
+  margin-left: 2vw;
+}
+
+.jobs-accordion .icons {
+  flex: 0 0 29.6vw;
+}
+
+.jobs-accordion .icons img {
+  height: 1.3vw;
+  margin-left: .75vw;
+}
+
+.jobs-accordion .text,
+.jobs-accordion .collapse > div {
+  flex: 0 0 32.55vw;
+  max-width: 32.55vw;
+}
+
+.jobs-accordion .collapse > div {
+  padding-top: 1.5vw;
+}
+
+.jobs-accordion h3 {
+  margin-bottom: .55vw;
+}
+
+.jobs-accordion .collapse p {
+  margin-bottom: 2vw;
+}
+
+.jobs-accordion h2 {
+  text-align: center;
+  margin-bottom: 3.38vw;
+}
+
+@media (max-width: 1023.98px) {
+  .jobs-accordion {
+    margin: 8.66vw 0 20vw 0;
+  }
+  
+  .jobs-accordion .container {
+    width: 90%;
+  }
+
+  .jobs-accordion h2 {
+    margin-bottom: 10vw;
+  }
+
+  .jobs-accordion .collapsible {
+    box-shadow: 0 3px 16px rgba(0, 0, 0, .1);
+    border-radius: 2.66vw;
+    padding: 5.33vw;
+  }
+  
+  .jobs-accordion .collapsible:not(:last-child) {
+    margin-bottom: 6vw;
+  }
+  
+  .jobs-accordion .collapse-toggler {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .jobs-accordion .collapse-toggler img {
+    width: 2.93vw;
+    margin-right: 3.33vw;
+  }
+  
+  .jobs-accordion .block {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .jobs-accordion .icons p:first-child {
+    margin-left: 11.33vw;
+  }
+  
+  .jobs-accordion .icons {
+    flex: 0;
+    margin-bottom: 8.66vw;
+  }
+  
+  .jobs-accordion .icons img {
+    height: 5.6vw;
+    margin-left: 2.93vw;
+  }
+  
+  .jobs-accordion .text,
+  .jobs-accordion .collapse > div {
+    flex: 0;
+    max-width: 100%;
+  }
+  
+  .jobs-accordion .collapse > div {
+    padding-top: 4.66vw;
+  }
+  
+  .jobs-accordion .collapse p {
+    margin-bottom: 7.33vw;
+  }
+}

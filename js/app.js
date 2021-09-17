@@ -133,22 +133,47 @@ if (document.querySelector('.scroll-to-links')) {
 ================================================== */
 const personList = document.querySelector('.about-team .person-list');
 
-personList.addEventListener('click', (e) => {
-  if (e.target.closest('.open')) {
-    e.preventDefault();
-    const person = e.target.closest('.person');
+if (personList) {
+  personList.addEventListener('click', (e) => {
+    if (e.target.closest('.open')) {
+      e.preventDefault();
+      const person = e.target.closest('.person');
+  
+      person.classList.add('show');
+      body.classList.add('overlay');
+      body.classList.add('no-scroll');
+    } 
+  
+    if (e.target.closest('.close')) {
+      e.preventDefault();
+      const person = e.target.closest('.person');
+  
+      person.classList.remove('show');
+      body.classList.remove('overlay');
+      body.classList.remove('no-scroll');
+    }
+  });
+}
 
-    person.classList.add('show');
-    body.classList.add('overlay');
-    body.classList.add('no-scroll');
-  } 
-
-  if (e.target.closest('.close')) {
-    e.preventDefault();
-    const person = e.target.closest('.person');
-
-    person.classList.remove('show');
-    body.classList.remove('overlay');
-    body.classList.remove('no-scroll');
-  }
-});
+/* #Jobs Gallery
+======================================================= */
+if (document.querySelector('.jobs-gallery .swiper-container')) {
+  new Swiper('.jobs-gallery .swiper-container', {
+    breakpoints: {
+      0: {
+        slidesPerView: 2,
+        slidesPerGroup: 1
+      },
+      1024: {
+        slidesPerView: 5,
+        slidesPerGroup: 2
+      }
+    },
+    centeredSlides: true,
+    loop: true,
+    navigation: {
+      nextEl: '.jobs-gallery .swiper-arrows .right',
+      prevEl: '.jobs-gallery .swiper-arrows .left',
+    },
+  });
+}
