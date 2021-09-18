@@ -3817,6 +3817,37 @@ body.overlay::after {
   }
 }
 
+/* #Service Img 2
+================================================== */
+.service-img-2 {
+  text-align: center;
+  padding: 4.16vw 0 3.125vw 0;
+  box-shadow: 0 3px 23px rgba(0, 0, 0, .16);
+}
+
+.service-img-2 .container {
+  width: 68%;
+}
+
+.service-img-2 img,
+.service-img-2 picture {
+  width: 100%;
+}
+
+@media (max-width: 1023.98px) {
+  .service-img-2 {
+    padding: 6vw 0;
+  }
+
+  .service-img-2 .container {
+    width: 90%;
+  }
+
+  .service-img-2 h2 {
+    margin-bottom: 3vw;
+  }
+}
+
 /* #Service QA
 ================================================== */
 .service-qa {
