@@ -3955,3 +3955,99 @@ body.overlay::after {
     padding-top: 2vw;
   }
 }
+
+/* #Service Roles
+================================================== */
+.service-roles {
+  height: 60.66vw;
+  background-image: url('../img/service/service-roles-bg.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.service-roles .container {
+  width: 83.33%;
+}
+
+.service-roles .img {
+  margin-top: 3.125vw;
+}
+
+.service-roles .img,
+.service-roles .img img {
+  width: 100%;
+}
+
+.service-roles h2 {
+  text-align: center;
+  margin-bottom: 1.5vw;
+}
+
+.service-roles h3 {
+  margin: 0 auto;
+  width: 45.83vw;
+  text-align: center;
+}
+
+.service-roles ul {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2.6vw;
+  flex-wrap: wrap;
+}
+
+.service-roles ul li {
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex: 0 0 5vw;
+  margin: 0 1vw;
+}
+
+.service-roles ul img {
+  height: 4.68vw;
+  margin-bottom: 1vw;
+}
+
+@media (max-width: 1023.98px) {
+  .service-roles {
+    height: 273.33vw;
+  }
+
+  .service-roles .container {
+    width: 90%;
+  }
+
+  .service-roles h2 {
+    margin-bottom: 4vw;
+  }
+  
+  .service-roles h3 {
+    width: 100%;
+  }
+
+  .service-roles .img {
+    margin-top: 8vw;
+  }
+
+  .service-roles ul {
+    margin-top: 13.33vw;
+    justify-content: space-between;
+  }
+  
+  .service-roles ul li {
+    flex: 0 0 30%;
+    margin: 0 0 8vw 0;
+  }
+  
+  .service-roles ul img {
+    height: 20vw;
+    margin-bottom: 3.33vw;
+  }
+}
