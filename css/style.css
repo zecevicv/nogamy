@@ -1172,6 +1172,7 @@ body.overlay::after {
   overflow: hidden;
 }
 
+.service-page .reviews,
 .projects-page .reviews,
 .case-study-page .reviews {
   margin-top: 0;
@@ -3618,5 +3619,308 @@ body.overlay::after {
 
   .case-study .bg {
     display: none;
+  }
+}
+
+/* #Service Managed
+================================================== */
+.service-managed {
+  margin-top: -4vw;
+  margin-bottom: 6.4vw;
+  position: relative;
+  z-index: 1;
+}
+
+.service-managed .container {
+  width: 59%;
+}
+
+.service-managed h2 {
+  text-align: center;
+  margin-bottom: 3.125vw;
+}
+
+.service-managed .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-managed .row .img {
+  flex: 0 0 21.77vw;
+}
+
+.service-managed .row .img img {
+  width: 100%;
+}
+
+.service-managed .row .text {
+  flex: 0 0 29.16vw;
+}
+
+.service-managed .row .text p:first-child {
+  margin-bottom: 1vw;
+}
+ 
+.service-managed .collapsible-panel {
+  background-color: #E9F6B2;
+  border-radius: 1vw;
+  padding: 2vw;
+}
+
+.service-managed .collapsible-panel .collapsible:not(:last-child) {
+  margin-bottom: 1.3vw;
+}
+
+.service-managed .collapsible-panel .collapse-toggler {
+  display: flex;
+  align-items: center;
+}
+
+.service-managed .collapsible-panel .collapse-toggler img {
+  width: 2vw;
+  margin-left: 1vw;
+  transform: rotate(0);
+  transition: all .4s ease;
+}
+
+.service-managed .collapsible-panel .show .collapse-toggler img {
+  transform: rotate(180deg);
+}
+
+.service-managed .collapsible-panel .collapse > div {
+  padding-top: 1vw;
+  padding-right: 3vw;
+}
+
+.service-managed .tab-navigation {
+  padding: 3.125vw 0 2.7vw 0;
+}
+
+.service-managed .tab-navigation ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-managed .tab-btn {
+  height: 2.6vw;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1vw;
+  border-radius: 500px;
+  color: #888AA7;
+  font-size: 1.04vw;
+  text-decoration: underline;
+}
+
+.service-managed .tab-btn.active {
+  padding: 0 1vw;
+  color: white;
+  background-color: #FF0063;
+  text-decoration: none;
+}
+
+@media (max-width: 1023.98px) {
+  .service-managed {
+    margin-top: 20vw;
+    margin-bottom: 11.33vw;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .service-managed .container {
+    width: 90%;
+  }
+  
+  .service-managed h2 {
+    margin-bottom: 8vw;
+  }
+  
+  .service-managed .row {
+    display: block;
+  }
+  
+  .service-managed .row .img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .service-managed .row .text {
+    text-align: center;
+    padding: 10vw 0 6vw 0;
+  }
+  
+  .service-managed .row .text p:first-child {
+    margin-bottom: 4vw;
+  }
+
+  .service-managed .tab-navigation {
+    display: none;
+  }
+
+  .service-managed .collapsible-panel {
+    padding: 0;
+    border-radius: 0;
+    background-color: white;
+  }
+
+  .service-managed .collapsible-panel .collapsible {
+    background-color: white;
+    box-shadow: 0 3px 16px rgba(0, 0, 0, .06);
+    border-radius: 2.66vw;
+    padding: 4vw 5.33vw;
+    transition: background-color .4s ease;
+  }
+
+  .service-managed .collapsible-panel .collapsible.show {
+    background-color: #E9F6B2;
+  }
+  
+  .service-managed .collapsible-panel {
+    margin-bottom: 3.33vw;
+  }
+  
+  .service-managed .collapsible-panel .collapse-toggler img {
+    width: 7.6vw;
+    margin-left: 5vw;
+  }
+  
+  .service-managed .collapsible-panel .collapse > div {
+    padding-top: 2vw;
+    padding-right: 12.6vw;
+  }
+
+  .service-managed .tabs .tab-panel {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+  }
+}
+
+/* #Service Img
+================================================== */
+.service-img .container {
+  width: 83%;
+}
+
+.service-img img,
+.service-img picture {
+  width: 100%;
+}
+
+@media (max-width: 1023.98px) {
+  .service-img .container {
+    width: 90%;
+  }
+}
+
+/* #Service QA
+================================================== */
+.service-qa {
+  padding: 8.33vw 0 4.16vw 0;
+}
+
+.service-qa .container {
+  width: 73%;
+}
+
+.service-qa .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-qa .img {
+  flex: 0 0 30.88vw;
+}
+
+.service-qa .img img {
+  width: 100%;
+}
+
+.service-qa .text {
+  flex: 0 0 37.91vw;
+}
+
+.service-qa .accordion {
+  padding-top: 4.16vw;
+}
+
+.service-qa .collapsible {
+  background-color: white;
+  border-radius: 1vw;
+  padding: 1vw 2vw;
+  box-shadow: 0 3px 16px rgba(0, 0, 0, .06);
+  transition: background-color .4s ease;
+}
+
+.service-qa .collapsible.show {
+  background-color: #E9F6B2;
+}
+
+.service-qa .collapsible:not(:last-child) {
+  margin-bottom: 1vw;
+}
+
+.service-qa .collapse-toggler {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.service-qa .collapse-toggler img {
+  width: .76vw;
+  transform: rotate(0);
+  transition: all .4s ease;
+  backface-visibility: hidden;
+}
+
+.service-qa .show .collapse-toggler img {
+  transform: rotate(180deg);
+}
+
+.service-qa .collapse > div {
+  padding-top: 1vw;
+}
+
+@media (max-width: 1023.98px) {
+  .service-qa {
+    padding: 10vw 0 18.66vw 0;
+  }
+  
+  .service-qa .container {
+    width: 90%;
+  }
+
+  .service-qa .row {
+    display: block;
+  }
+  
+  .service-qa .text {
+    padding: 10.66vw 0;
+  }
+  
+  .service-qa .accordion {
+    padding-top: 0;
+  }
+
+  .service-qa .collapsible {
+    border-radius: 2.66vw;
+    padding: 5.33vw;
+  }
+  
+  .service-qa .collapsible:not(:last-child) {
+    margin-bottom: 3.33vw;
+  }
+  
+  .service-qa .collapsible .collapse-toggler img {
+    width: 2.93vw;
+    margin-right: 2vw;
+  }
+  
+  .service-qa .collapsible .collapse > div {
+    padding-top: 2vw;
   }
 }
