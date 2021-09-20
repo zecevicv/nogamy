@@ -1,0 +1,463 @@
+/* #Dropdown
+================================================== */
+.dropdown .dropdown-toggler img {
+  margin-left: .5vw;
+  margin-right: 0;
+}
+
+.header .dropdown .dropdown-menu {
+  right: auto;
+  left: -1vw;
+}
+
+/* #Header
+================================================== */
+.header {
+  direction: rtl;
+}
+
+.header-menu {
+  direction: ltr;
+}
+
+.header-links > ul > li {
+  margin-left: 0;
+  margin-right: 1.8vw;
+}
+
+@media (max-width: 1023.98px) {
+  .header-menu {
+    direction: rtl;
+  }
+}
+
+/* #Home Banner
+================================================== */
+.home-banner .container {
+  padding-left: 6.45vw;
+  padding-right: 0;
+}
+
+@media (max-width: 1023.98px) {
+  .home-banner .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+/* #Home Services
+================================================== */
+.home-services .circle {
+  right: auto;
+  left: -18.75vw;
+}
+
+@media (max-width: 1023.98px) {
+  .home-services .swiper-container {
+    padding-right: 0;
+    padding-left: 5%;
+  }
+
+  .home-services .swiper-arrows img {
+    transform: rotate(180deg);
+  }
+
+  .home-services .swiper-arrows .left {
+    margin-right: 0;
+    margin-left: 5vw;
+  }
+}
+
+/* #Home Services 2
+================================================== */
+.home-services-2 .container {
+  align-items: center;
+  bottom: 14vw;
+}
+
+@media (max-width: 1023.98px) {
+  .home-services-2 .container {
+    bottom: auto;
+    top: 30vw;
+  }
+}
+
+/* #Reviews
+================================================== */
+.reviews {
+  padding-top: 10vw;
+}
+
+.reviews .swiper-container {
+  padding-left: 12.5%;
+  padding-right: 0;
+}
+
+.reviews .customer .logo {
+  margin-left: 0;
+  margin-right: 1.3vw;
+}
+
+.reviews .bg {
+  margin-bottom: 3vw;
+}
+
+@media (max-width: 1023.98px) {
+  .reviews {
+    padding-top: 13.3vw;
+  }
+
+  .reviews .swiper-container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  
+  .reviews .customer .logo {
+    margin-left: 0;
+    margin-right: 4.4vw;
+  }
+
+  .reviews .bg {
+    margin-bottom: 7vw;
+  }
+}
+
+/* #Contact Bar
+================================================== */
+.contact-bar input {
+  margin-left: 0;
+  margin-right: 1.5vw;
+}
+
+@media (max-width: 1023.98px) {
+  .contact-bar input {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* #Footer
+================================================== */
+@media (min-width: 1024px) {
+  .footer .collapsible:not(:last-child) {
+    margin-left: 0;
+    margin-right: 7.7vw;
+  }
+}
+
+/* #Banner
+================================================== */
+.banner .container {
+  justify-content: flex-end;
+}
+
+/* #Blog Posts Slider
+================================================== */
+.blog-posts-slider .blog-post .post-link {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.blog-posts-slider .blog-post .post-link a img {
+  margin-left: .7vw;
+  margin-right: 0;
+
+  transform: rotate(180deg);
+}
+
+.blog-posts-slider .swiper-arrows img {
+  transform: rotate(180deg);
+}
+
+.blog-posts-slider .swiper-arrows .right {
+  margin-left: .75vw;
+  margin-right: 0;
+}
+
+@media (max-width: 1023.98px) {
+  .blog-posts-slider .blog-post .post-link {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  
+  .blog-posts-slider .blog-post .post-link a img {
+    margin-right: 0;
+    margin-left: 1.46vw;
+  }
+  
+  .blog-posts-slider .swiper-arrows .right {
+    margin-left: 3vw;
+    margin-right: 0;
+  }
+}
+
+/* #Blog Navigation
+================================================== */
+.blog-navigation li:first-child a {
+  margin-left: 0;
+}
+
+.blog-navigation li:first-child a:not(.active) {
+  padding-left: 0;
+}
+
+/* #Blog Posts
+================================================== */
+.blog-posts .blog-post .post-meta {
+  border-right: 0;
+  border-left: 1px solid #FF0163;
+  padding-right: 0;
+  padding-left: 1vw;
+}
+
+.blog-posts .blog-post .post-link a img {
+  transform: rotate(180deg);
+  margin-left: .7vw;
+  margin-right: 0;
+}
+
+@media (max-width: 1023.98px) {
+  .blog-posts .blog-post .post-meta {
+    border-right: none;
+    padding-right: 0;
+    border-left: none;
+    padding-left: 0;
+  }
+  .blog-posts .blog-post .post-link {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  
+  .blog-posts .blog-post .post-link a img {
+    margin-right: 0;
+    margin-left: 1.46vw;
+  }
+}
+
+/* #Projects Slider
+================================================== */
+@media (max-width: 1023.98px) {
+  .projects-slider .swiper-arrows img {
+    transform: rotate(180deg);
+  }
+
+  .projects-slider .swiper-arrows .left {
+    margin-left: 5vw;
+    margin-right: 0;
+  }
+}
+
+/* #Services Slider
+================================================== */
+.services-slider .text {
+  padding-right: 0;
+  padding-left: 2vw;
+}
+
+@media (max-width: 1023.98px) {
+  .services-slider .text {
+    padding-left: 5.33vw;
+    padding-right: 0;
+  }
+
+  .services-slider .swiper-arrows img {
+    transform: rotate(180deg);
+  }
+
+  .services-slider .swiper-arrows .left {
+    margin-left: 5vw;
+    margin-right: 0;
+  }
+}
+
+/* #Case Study
+================================================== */
+.case-study .sidebar {
+  padding-right: 11vw;
+  padding-left: 0;
+}
+
+.case-study .sidebar img {
+  margin-left: 0;
+  margin-right: 1vw;
+}
+
+.case-study .num {
+  margin-left: 0;
+  margin-right: 1.5vw;
+}
+
+.case-study .collapsible-panel .collapse-toggler img {
+  margin-left: 0;
+  margin-right: 1vw;
+}
+
+.case-study .collapsible-panel .collapse > div {
+  padding-right: 0;
+  padding-left: 3vw;
+}
+
+.case-study .bg {
+  right: auto;
+  left: -9.375vw;
+}
+
+@media (max-width: 1023.98px) {
+  .case-study .sidebar {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .case-study .sidebar .collapse-toggler img {
+    margin-right: 0;
+    margin-left: 6vw;
+  }
+  
+  .case-study .sidebar img {
+    margin-left: 0;
+    margin-right: 6vw;
+  }
+  
+  .case-study .num {
+    margin-right: 4.6vw;
+    margin-left: 0;
+  }
+  
+  .case-study .collapsible-panel .collapse-toggler img {
+    margin-right: 5vw;
+    margin-left: 0;
+  }
+  
+  .case-study .collapsible-panel .collapse > div {
+    padding-left: 12.6vw;
+    padding-right: 0;
+  }
+}
+
+/* #Jobs Gallery
+================================================== */
+.jobs-gallery .swiper-arrows img {
+  transform: rotate(180deg);
+}
+
+.jobs-gallery .swiper-arrows .right {
+  margin-left: .75vw;
+  margin-right: 0;
+}
+
+@media (max-width: 1023.98px) {
+  .jobs-gallery .swiper-arrows .right {
+    margin-left: 3vw;
+    margin-right: 0;
+  }
+}
+
+/* #Jobs Accordion
+================================================== */
+.jobs-accordion .collapse-toggler img {
+  margin-right: 0;
+  margin-left: 1vw;
+}
+
+.jobs-accordion .icons p:first-child {
+  margin-right: 2vw;
+  margin-left: 0;
+}
+
+.jobs-accordion .icons img {
+  margin-right: .75vw;
+  margin-left: 0;
+}
+
+@media (max-width: 1023.98px) {
+  .jobs-accordion .collapse-toggler img {
+    margin-left: 3.33vw;
+    margin-right: 0;
+  }
+  
+  .jobs-accordion .icons p:first-child {
+    margin-left: 0;
+    margin-right: 11.33vw;
+  }
+  
+  .jobs-accordion .icons img {
+    margin-right: 2.93vw;
+    margin-left: 0;
+  }
+}
+
+/* #Projects 
+================================================== */
+.project .customer .logo {
+  margin-right: 1.3vw;
+  margin-left: 0;
+}
+
+.project .tech > p {
+  margin-right: 1.5vw;
+  margin-left: 0;
+}
+
+.project .tech li:not(:last-child) {
+  margin-right: 1.3vw;
+  margin-left: 0;
+}
+
+@media (max-width: 1023.98px) {
+  .project .customer .logo {
+    margin-right: 4vw;
+    margin-left: 0;
+  }
+  
+  .project .tech > p {
+    margin-right: 2.66vw;
+    margin-left: 0;
+  }
+  
+  .project .tech li:not(:last-child) {
+    margin-right: 4vw;
+    margin-left: 0;
+  }
+}
+
+/* #Service Managed
+================================================== */
+.service-managed .collapsible-panel .collapse-toggler img {
+  margin-left: 0;
+  margin-right: 1vw;
+}
+
+.service-managed .collapsible-panel .collapse > div {
+  padding-right: 0;
+  padding-left: 3vw;
+}
+
+@media (max-width: 1023.98px) {
+  .service-managed .collapsible-panel .collapse-toggler img {
+    margin-right: 5vw;
+    margin-left: 0;
+  }
+  
+  .service-managed .collapsible-panel .collapse > div {
+    padding-right: 0;
+    padding-left: 12.6vw;
+  }
+}
+
+/* #Service QA
+================================================== */
+@media (max-width: 1023.98px) {
+  .service-qa .collapsible .collapse-toggler img {
+    margin-right: 0;
+    margin-left: 2vw;
+  }
+}
+
+/* #Specializations
+================================================== */
+@media (max-width: 1023.98px) {
+  .specializations .arrow {
+    margin-left: 0;
+    margin-right: 5vw;
+  }
+}

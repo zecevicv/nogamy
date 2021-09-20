@@ -1270,7 +1270,7 @@ body.overlay::after {
   
   .reviews .text {
     display: block;
-    width: 86%;
+    width: 89%;
     margin: 0 auto 15vw auto;
   }
 
@@ -1280,7 +1280,7 @@ body.overlay::after {
   }
   
   .reviews .swiper-container {
-    padding-right: 4%;
+    padding-right: 0;
     margin: -4vw 0;
   }
 
