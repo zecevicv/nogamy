@@ -461,3 +461,13 @@
     margin-right: 5vw;
   }
 }
+
+/* #Logos
+================================================== */
+.home-technologies .logos .group {
+  transform: translateX(-100%);
+  left: 0;
+  right: auto;
+}
+
+@keyframes move { to { transform: translateX(1300%); } }
