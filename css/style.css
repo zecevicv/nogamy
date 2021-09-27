@@ -239,14 +239,24 @@ body.overlay::after {
   color: #111C4E;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   width: 87%;
   padding-right: 6.45vw;
 }
 
+.home-page .banner .container {
+  align-items: flex-start;
+}
+
 .banner .img {
   position: relative;
+  flex: 0 0 28.6vw;
+  margin-left: 9vw;
+}
+
+.home-page .banner .img {
   flex: 0 0 44.11vw;
+  margin-left: 0;
 }
 
 .banner .img img,
@@ -300,6 +310,7 @@ body.overlay::after {
     flex: 0;
     border-radius: 3.33vw;
     margin-top: 12vw;
+    margin-left: 0;
   }
 
   .banner h1 {

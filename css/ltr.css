@@ -148,7 +148,7 @@
 /* #Banner
 ================================================== */
 .banner .container {
-  justify-content: flex-end;
+  padding-left: 7vw;
 }
 
 /* #Blog Posts Slider
