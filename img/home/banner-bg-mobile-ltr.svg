@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 750 1248" style="enable-background:new 0 0 750 1248;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);}
+	.st1{fill:#111C4E;}
+	.st2{opacity:0.12;fill:url(#Ellipse_1445_1_);enable-background:new    ;}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="0" y="0" width="750" height="1248"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g id="Mask_Group_49" class="st0">
+		<g id="Group_7092">
+			<path id="Intersection_1" class="st1" d="M89,1248c-30,0-59.7-1-89-3L0,0l750,0v1059.8C568,1177.7,338.5,1248,89,1248z"/>
+			
+				<linearGradient id="Ellipse_1445_1_" gradientUnits="userSpaceOnUse" x1="-582.7887" y1="1164.1023" x2="-582.7887" y2="1163.1023" gradientTransform="matrix(-821 0 0 -821 -478609 955973)">
+				<stop  offset="0" style="stop-color:#FDFDFF"/>
+				<stop  offset="1" style="stop-color:#E2EAF9"/>
+			</linearGradient>
+			<circle id="Ellipse_1445" class="st2" cx="-139.5" cy="655.5" r="410.5"/>
+		</g>
+	</g>
+</g>
+</svg>
