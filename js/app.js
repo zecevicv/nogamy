@@ -141,7 +141,6 @@ if (personList) {
   
       person.classList.add('show');
       body.classList.add('overlay');
-      body.classList.add('no-scroll');
     } 
   
     if (e.target.closest('.close')) {
@@ -150,7 +149,6 @@ if (personList) {
   
       person.classList.remove('show');
       body.classList.remove('overlay');
-      body.classList.remove('no-scroll');
     }
   });
 }
