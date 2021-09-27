@@ -2401,32 +2401,37 @@ body.overlay::after {
   top: 10.4vw;
 }
 
-.technologies .sidebar p {
-  height: 2.6vw;
-  border-radius: 500px;
+.technologies .sidebar p,
+.technologies .sidebar a {
   color: #888AA7;
   font-size: 1.04vw;
-  padding: 0 2vw;
-  color: white;
-  background-color: #FF0063;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  height: auto;
+  border-radius: 500px;
+  font-size: 1.04vw;
+  padding: .95vw 2vw;
+  transition: all .4s ease;
+  line-height: 1;
+  text-align: right;
 }
 
-.technologies .sidebar a {
-  color: #888AA7;
-  font-size: 1.04vw;
+.technologies .sidebar p,
+.technologies .sidebar a.active,
+.technologies .sidebar a:hover {
+  color: white;
+  background-color: #FF0063;
 }
 
 .technologies .sidebar p,
 .technologies .sidebar li:not(:last-child) {
-  margin-bottom: 1.75vw;
+  margin-bottom: .75vw;
 }
 
 .technologies .sidebar ul {
-  max-width: 75%;
+  max-width: 85%;
 }
 
 .technologies .main {
@@ -2575,28 +2580,31 @@ body.overlay::after {
   top: 10.4vw;
 }
 
-.specializations .sidebar p {
-  height: 2.6vw;
-  border-radius: 500px;
+.specializations .sidebar p,
+.specializations .sidebar a {
   color: #888AA7;
   font-size: 1.04vw;
-  padding: 0 2vw;
-  color: white;
-  background-color: #FF0063;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  height: 2.6vw;
+  border-radius: 500px;
+  font-size: 1.04vw;
+  padding: 0 2vw;
+  transition: all .4s ease;
 }
 
-.specializations .sidebar a {
-  color: #888AA7;
-  font-size: 1.04vw;
+.specializations .sidebar p,
+.specializations .sidebar a.active,
+.specializations .sidebar a:hover {
+  color: white;
+  background-color: #FF0063;
 }
 
 .specializations .sidebar p,
 .specializations .sidebar li:not(:last-child) {
-  margin-bottom: 1.75vw;
+  margin-bottom: .75vw;
 }
 
 .specializations .sidebar ul {

@@ -125,6 +125,12 @@ if (document.querySelector('.scroll-to-links')) {
       const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
       window.scrollTo({top: y, behavior: 'smooth'});
+
+      for (let index = 0; index < scrollToLinks.length; index++) {
+        scrollToLinks[index].classList.remove('active');
+      }
+
+      link.classList.add('active');
     });
   });
 }
