@@ -296,6 +296,13 @@ body.overlay::after {
   width: 100%;
 }
 
+@media (min-width: 1024px) {
+  .jobs-page .banner .img {
+    flex: 0 0 44.11vw;
+    margin-top: 7vw;
+  }
+}
+
 @media (max-width: 1023.98px) {
   .banner .container {
     top: 25vw;
@@ -328,6 +335,14 @@ body.overlay::after {
   .banner .logo {
     width: 30vw;
     margin-bottom: 3.33vw;
+  }
+
+  .jobs-page .banner .container {
+    overflow: hidden;
+  }
+  
+  .jobs-page .banner .img img {
+    transform: scale(1.1);
   }
 }
 
