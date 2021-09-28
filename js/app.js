@@ -249,3 +249,12 @@ if (document.querySelector('.home-technologies .swiper-container')) {
     }
   });
 }
+
+/* #AOS Animations
+    ======================================================= */
+AOS.init({
+  startEvent: 'load',
+  once: true,
+  duration: 800,
+  offset: 300,
+});
