@@ -15,6 +15,7 @@
 
   <!-- Style (Vendor) -->
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
 
   <!-- Style -->
   <link rel="stylesheet" href="css/elevate-framework.css">
@@ -130,28 +131,28 @@
   </header>
 
   <!-- Banner -->
-  <div class="banner">
+  <div class="banner" id="banner">
     <div class="container">
       <!-- Text -->
       <div class="text">
-        <div class="logo">
+        <div class="logo" data-aos="fade-up" data-aos-delay="0" data-aos-anchor="#banner">
           <img src="img/logos/logo-3.jpg" alt="nogamy-icon">
         </div>
-        <h1 class="f-d-55 f-m-70 medium">
+        <h1 class="f-d-55 f-m-70 medium" data-aos="fade-up" data-aos-delay="150" data-aos-anchor="#banner">
           פרויקט לבנק לאומי
           שיפור מערכת נתונים
         </h1>
-        <p class="f-d-20 f-m-30 light">
+        <p class="f-d-20 f-m-30 light" data-aos="fade-up" data-aos-delay="300" data-aos-anchor="#banner">
           נוגמי מספקת שירותי בינה עסקית קצה לקצה החל מהגדרת 
           הדרישות BI העסקיות, אפיון הפתרון הטכנולוגי המתאים וכלה
           בפיתוח ויישום מערכת בארגון
         </p>
-        <a href="#" class="btn btn-primary">
+        <a href="#" class="btn btn-primary" data-aos="fade-up" data-aos-delay="450" data-aos-anchor="#banner">
           הצטרפו אלינו
         </a>
       </div>
       <!-- Img -->
-      <div class="img">
+      <div class="img" data-aos="fade" data-aos-delay="1050" data-aos-anchor="#banner">
         <img src="img/case-study/banner-img.png" alt="nogamy-img">
       </div>
     </div>
@@ -319,6 +320,10 @@
               </p>
             </div>
           </li>
+          <!-- Bg -->
+          <div class="bg">
+            <img src="img/projects/project-img.jpg" alt="nogamy-img" data-aos="fade">
+          </div>
           <!-- Item -->
           <li>
             <div class="heading">
@@ -340,9 +345,6 @@
           </li>
         </ul>
       </div>
-    </div>
-    <div class="bg">
-      <img src="img/projects/project-img.jpg" alt="nogamy-img">
     </div>
   </div>
 
@@ -801,6 +803,7 @@
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/gsap.min.js"></script>
   <script src="https://cdn.rawgit.com/josephg/noisejs/master/perlin.js"></script>
+  <script src="js/aos.js"></script>
 
   <!-- Script -->
   <script src="js/elevate-framework.js"></script>
