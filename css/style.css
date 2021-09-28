@@ -296,6 +296,27 @@ body.overlay::after {
   width: 100%;
 }
 
+.blog-post-page .banner .img {
+  position: relative;
+}
+
+.blog-post-page .banner .img .post-img {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  width: 25vw;
+  height: 25vw;
+}
+
+.blog-post-page .banner .img .post-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
 @media (min-width: 1024px) {
   .jobs-page .banner .img {
     flex: 0 0 44.11vw;
@@ -304,6 +325,11 @@ body.overlay::after {
 
   .blog-page .banner .img {
     flex: 0 0 35vw;
+    margin-top: 2vw;
+  }
+
+  .blog-post-page .banner .img {
+    flex: 0 0 40vw;
     margin-top: 2vw;
   }
 }
@@ -349,6 +375,25 @@ body.overlay::after {
   .jobs-page .banner .img img,
   .blog-page .banner .img img {
     transform: scale(1.1);
+  }
+
+  .blog-post-page .banner {
+    overflow: hidden;
+  }
+
+  .blog-post-page .banner .img img {
+    transform: scale(1.3);
+  }
+
+  .blog-post-page .banner .img .post-img {
+    top: 50%;
+    left: 44%;
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .blog-post-page .banner .img {
+    margin-top: 20vw;
   }
 }
 
