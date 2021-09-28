@@ -336,6 +336,11 @@ body.overlay::after {
     flex: 0 0 40vw;
     margin-top: 2vw;
   }
+
+  .specializations-page .banner .img {
+    flex: 0 0 40vw;
+    margin-top: 2vw;
+  }
 }
 
 @media (max-width: 1023.98px) {
