@@ -323,6 +323,10 @@ body.overlay::after {
     margin-top: 7vw;
   }
 
+  .technologies-page .banner .img {
+    flex: 0 0 44.11vw;
+  }
+
   .blog-page .banner .img {
     flex: 0 0 35vw;
     margin-top: 2vw;
@@ -377,7 +381,8 @@ body.overlay::after {
     transform: scale(1.1);
   }
 
-  .blog-post-page .banner {
+  .blog-post-page .banner,
+  .technologies-page .banner {
     overflow: hidden;
   }
 
@@ -394,6 +399,10 @@ body.overlay::after {
 
   .blog-post-page .banner .img {
     margin-top: 20vw;
+  }
+
+  .technologies-page .banner .img img {
+    transform: scale(1.4);
   }
 }
 
