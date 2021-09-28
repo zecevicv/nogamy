@@ -341,6 +341,11 @@ body.overlay::after {
     flex: 0 0 40vw;
     margin-top: 2vw;
   }
+
+  .about-page .banner .img {
+    flex: 0 0 35vw;
+    margin-top: 2vw;
+  }
 }
 
 @media (max-width: 1023.98px) {
