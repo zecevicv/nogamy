@@ -466,10 +466,6 @@
 
 /* #Logos
 ================================================== */
-.home-technologies .logos .group {
-  transform: translateX(-100%);
-  left: 0;
-  right: auto;
+.home-technologies .swiper-container {
+  direction: rtl;
 }
-
-@keyframes move { to { transform: translateX(1300%); } }

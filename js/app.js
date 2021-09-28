@@ -120,11 +120,14 @@ if (document.querySelector('.scroll-to-links')) {
       e.preventDefault();
 
       const id = link.hash;
-      const yOffset = -200; 
+      const yOffset = -200;
       const element = document.querySelector(id);
       const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
-      window.scrollTo({top: y, behavior: 'smooth'});
+      window.scrollTo({
+        top: y,
+        behavior: 'smooth'
+      });
 
       for (let index = 0; index < scrollToLinks.length; index++) {
         scrollToLinks[index].classList.remove('active');
@@ -144,15 +147,15 @@ if (personList) {
     if (e.target.closest('.open')) {
       e.preventDefault();
       const person = e.target.closest('.person');
-  
+
       person.classList.add('show');
       body.classList.add('overlay');
-    } 
-  
+    }
+
     if (e.target.closest('.close')) {
       e.preventDefault();
       const person = e.target.closest('.person');
-  
+
       person.classList.remove('show');
       body.classList.remove('overlay');
     }
@@ -217,5 +220,32 @@ if (document.querySelector('.projects-slider .swiper-container')) {
       nextEl: '.projects-slider .swiper-arrows .left',
       prevEl: '.projects-slider .swiper-arrows .right',
     },
+  });
+}
+
+/* #Home Logo Slider
+  ======================================================= */
+if (document.querySelector('.home-technologies .swiper-container')) {
+  new Swiper(".home-technologies .swiper-container", {
+    loop: true,
+    freeMode: true,
+    spaceBetween: 0,
+    grabCursor: true,
+    loop: true,
+    autoplay: {
+      delay: 1
+    },
+    allowTouchMove: false,
+    freeMode: true,
+    speed: 2000,
+    freeModeMomentum: false,
+    breakpoints: {
+      0: {
+        slidesPerView: 4.5,
+      },
+      1024: {
+        slidesPerView: 12,
+      }
+    }
   });
 }
