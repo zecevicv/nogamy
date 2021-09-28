@@ -15,6 +15,7 @@
 
   <!-- Style (Vendor) -->
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
 
   <!-- Style -->
   <link rel="stylesheet" href="css/elevate-framework.css">
@@ -130,29 +131,29 @@
   </header>
 
   <!-- Banner -->
-  <div class="banner">
+  <div class="banner" id="banner">
     <div class="container">
       <!-- Text -->
       <div class="text">
-        <h1 class="f-d-55 f-m-70 medium">
+        <h1 class="f-d-55 f-m-70 medium" data-aos="fade-up" data-aos-delay="0" data-aos-anchor="#banner">
           Nogamy People           
         </h1>
-        <p class="f-d-50 f-m-50 light"> 
+        <p class="f-d-50 f-m-50 light" data-aos="fade-up" data-aos-delay="150" data-aos-anchor="#banner"> 
           פרויקטים מקצה לקצה
           בכל תחומי ה- 
           Data Analytics
         </p>
-        <a href="#" class="btn btn-primary">
+        <a href="#" class="btn btn-primary" data-aos="fade-up" data-aos-delay="300" data-aos-anchor="#banner">
           לפרטים נוספים
         </a>
       </div>
       <!-- Img -->
-      <div class="img">
+      <div class="img" data-aos="fade" data-aos-delay="900" data-aos-anchor="#banner">
         <img src="img/service/banner-img-3.png" alt="nogamy-img">
       </div>
     </div>
-     <!-- Bg -->
-     <div class="bg">
+    <!-- Bg -->
+    <div class="bg">
       <picture>
         <source media="(min-width:1024px)" srcset="img/service/banner-bg.jpg">
         <img src="img/service/banner-bg-mobile.jpg" alt="nogamy-img">
@@ -167,7 +168,7 @@
       <!-- Row -->
       <div class="row">
         <!-- Img -->
-        <div class="img">
+        <div class="img" data-aos="fade">
           <img src="img/service/service-managed-3.jpg" alt="nogamy-img">
         </div>
         <!-- Text -->
@@ -366,7 +367,7 @@
       <h2 class="f-d-50 f-m-60 medium text-blue">התפקידים</h2>
       <h3 class="f-d-20 f-m-30 light text-light-gray"> Data Analytics .הינם מומחים בעלי ניסיון רחב ומעמיק בכל שכבות הפתרון של מערך Nogamy אנשי הדאטה של
         .אנו נבין את הצורך שלכם, ונתאים לכם את המומחה עם הפרופיל המדוייק ביותר</h3>
-      <div class="img">
+      <div class="img" data-aos="fade">
         <picture>
           <source media="(min-width:1024px)" srcset="img/service/roles.jpg">
           <img src="img/service/roles-mobile.jpg" alt="nogamy-img">
@@ -880,6 +881,7 @@
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/gsap.min.js"></script>
   <script src="https://cdn.rawgit.com/josephg/noisejs/master/perlin.js"></script>
+  <script src="js/aos.js"></script>
 
   <!-- Script -->
   <script src="js/elevate-framework.js"></script>
