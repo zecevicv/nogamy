@@ -1179,6 +1179,7 @@ body.overlay::after {
 .home-technologies {
   color: white;
   position: relative;
+  overflow: hidden;
 }
 
 .home-technologies .container {

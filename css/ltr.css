@@ -467,5 +467,9 @@
 /* #Logos
 ================================================== */
 .home-technologies .swiper-container {
-  direction: rtl;
+  transform: rotate(180deg);
+}
+
+.home-technologies .logos .group {
+  transform: rotate(-180deg);
 }
