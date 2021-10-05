@@ -236,7 +236,7 @@ if (document.querySelector('.projects-slider .swiper-container')) {
   });
 }
 
-/* #Home Logo Slider
+/* #Logo Slider
   ======================================================= */
 if (document.querySelector('.home-technologies .swiper-container')) {
   new Swiper(".home-technologies .swiper-container", {
@@ -258,6 +258,31 @@ if (document.querySelector('.home-technologies .swiper-container')) {
       },
       1024: {
         slidesPerView: 12,
+      }
+    }
+  });
+}
+
+if (document.querySelector('.technologies-page .banner .swiper-container')) {
+  new Swiper(".technologies-page .banner .swiper-container", {
+    loop: true,
+    freeMode: true,
+    spaceBetween: 0,
+    grabCursor: true,
+    loop: true,
+    autoplay: {
+      delay: 1
+    },
+    allowTouchMove: false,
+    freeMode: true,
+    speed: 2000,
+    freeModeMomentum: false,
+    breakpoints: {
+      0: {
+        slidesPerView: 4,
+      },
+      1024: {
+        slidesPerView: 6.5,
       }
     }
   });

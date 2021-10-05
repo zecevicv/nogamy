@@ -478,10 +478,21 @@
 
 /* #Logos
 ================================================== */
-.home-technologies .swiper-container {
+.home-technologies .swiper-container,
+.technologies-page .banner .swiper-container {
   transform: rotate(180deg);
 }
 
 .home-technologies .logos .group {
   transform: rotate(-180deg);
+}
+
+.technologies-page .banner .logos .group {
+  transform: rotate(-180deg) translateY(-11%);
+}
+
+@media (max-width: 1023.98px) {
+  .technologies-page .banner .logos .group {
+    transform: rotate(-180deg) translateY(-6%);
+  }
 }
