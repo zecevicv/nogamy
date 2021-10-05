@@ -1,3 +1,17 @@
+/* #Hamburger Menu
+  ======================================================= */
+const hamburgerBtn = document.querySelector('.header-hamburger');
+const body = document.querySelector('body');
+const header = document.querySelector('.header');
+
+if (hamburgerBtn) {
+  hamburgerBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    header.classList.toggle('show');
+    body.classList.toggle('no-scroll');
+  });
+}
+
 /* #Dropdown
     ======================================================= */
 const dropdowns = document.querySelectorAll('.dropdown');
@@ -60,7 +74,6 @@ if (document.querySelector('.reviews .swiper-container')) {
 
 /* #Video Modal
   ======================================================= */
-const body = document.querySelector('body');
 const videoModalToggler = document.querySelector('.home-banner .video');
 
 // Message Modal Handler

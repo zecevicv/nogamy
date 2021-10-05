@@ -136,6 +136,22 @@ body.overlay::after {
   line-height: 1.6;
 }
 
+@media (max-width: 1023.98px) {
+  .dropdown .dropdown-toggler img {
+    width: 4.26vw;
+    margin-right: 4vw;
+  }
+
+  .header .dropdown .dropdown-menu {
+    padding: 0;
+    right: 0;
+    line-height: 1.6;
+    position: static;
+    transform: none;
+    margin-top: 3vw;
+  }
+}
+
 /* #Header
 ================================================== */
 .header {
@@ -208,7 +224,37 @@ body.overlay::after {
   }
 
   .header-links {
+    position: fixed;
+    top: 16.368vw;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 16.368vw);
+    background-color: #111c4e;
+    padding: 6.66vw 7% 0 7%;
+    transform: translateX(100%);
+    transition: all .4s ease;
+    overflow-y: auto;
+  }
+
+  .header.show .header-links {
+    transform: translateX(0);
+  }
+
+  .header-links > ul {
+    display: block;
+  }
+
+  .header-links > ul > li {
+    margin-left: 0;
+    margin-bottom: 3vw;
+  }
+  
+  .header-links > ul > li.active::after {
     display: none;
+  }
+
+  .header-links .search img {
+    width: 5.33vw;
   }
 
   .header-hamburger {
