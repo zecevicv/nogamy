@@ -722,6 +722,7 @@ body.overlay::after {
 ================================================== */
 .home-services-2 {
   position: relative;
+  overflow: hidden;
 }
 
 .home-services-2 .container {
