@@ -295,7 +295,6 @@ const customerLogos = document.querySelectorAll('.home-customers .logo');
 if (customerLogos) {
   let runFunctions = () => {
     tlFn();
-    logoSwitchFn();
   }
 
   let logoSwitchFn = () => {
@@ -332,6 +331,7 @@ if (customerLogos) {
       setTimeout(timeoutFn, listIndex * 150);
     });
   }
+  logoSwitchFn();
 
   let tlFn = () => {
     let timeline = gsap.timeline({repeat: -1, yoyo: true});
