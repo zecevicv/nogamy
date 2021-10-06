@@ -288,6 +288,35 @@ if (document.querySelector('.technologies-page .banner .swiper-container')) {
   });
 }
 
+/* #Home Customers Animation
+    ======================================================= */
+const customerLogos = document.querySelectorAll('.home-customers .logo');
+
+if (customerLogos) {
+  let timelineFunction = () => {
+    let timeline = gsap.timeline({repeat: -1, yoyo: true});
+  
+    timeline.to(customerLogos, {
+      duration: 1.5, 
+      ease: 'Power0.easeNone',
+      y: '-15px',
+      stagger:{ each: 0.15, from: 'random' }
+    });
+  };
+
+  gsap.from(customerLogos, {
+    duration: .8, 
+    ease:"Elastic.easeOut.config(2, .5)", 
+    opacity: 0, 
+    y: '200%',
+    stagger:{ each: 0.15, from: 'right' },
+    scrollTrigger: {
+      trigger: ".home-customers .text",
+    },
+    onComplete: timelineFunction
+  });
+}
+
 /* #AOS Animations
     ======================================================= */
 AOS.init({
