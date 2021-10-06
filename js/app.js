@@ -293,13 +293,53 @@ if (document.querySelector('.technologies-page .banner .swiper-container')) {
 const customerLogos = document.querySelectorAll('.home-customers .logo');
 
 if (customerLogos) {
-  let timelineFunction = () => {
+  let runFunctions = () => {
+    tlFn();
+    logoSwitchFn();
+  }
+
+  let logoSwitchFn = () => {
+    const customerLogoList = document.querySelectorAll('.home-customers .logo ul');
+  
+    customerLogoList.forEach((list, listIndex) => {
+      const listItems = list.querySelectorAll('li');
+      let i = 0;
+  
+      listItems.forEach((item, index) => {
+        if (item.classList.contains('active')) {
+          i = index;
+        }
+      });
+  
+      let timeoutFn = () => {
+        setTimeout(function(){ 
+          if (i > 0) {
+            listItems[i-1].classList.remove('active');
+          }
+    
+          if (i == listItems.length) {
+            i = 0;
+            listItems[listItems.length - 1].classList.remove('active');
+          }
+    
+          listItems[i].classList.add('active');
+          i++;
+    
+          timeoutFn();
+        }, 5000);
+      };
+  
+      setTimeout(timeoutFn, listIndex * 150);
+    });
+  }
+
+  let tlFn = () => {
     let timeline = gsap.timeline({repeat: -1, yoyo: true});
   
     timeline.to(customerLogos, {
       duration: 1.5, 
-      ease: 'Back.easeOut.config(4)',
-      y: '-15px',
+      ease: 'Elastic.easeOut.config(2, .5)',
+      y: '-10px',
       stagger:{ each: 0.05, from: 'random' }
     });
   };
@@ -308,13 +348,14 @@ if (customerLogos) {
     duration: .8, 
     ease:"Elastic.easeOut.config(2, .5)", 
     opacity: 0, 
-    y: '200%',
+    scale: .3,
     stagger:{ each: 0.15, from: 'right' },
     scrollTrigger: {
       trigger: ".home-customers .text",
     },
-    onComplete: timelineFunction
+    onComplete: runFunctions
   });
+
 }
 
 /* #AOS Animations
