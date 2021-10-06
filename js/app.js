@@ -298,9 +298,9 @@ if (customerLogos) {
   
     timeline.to(customerLogos, {
       duration: 1.5, 
-      ease: 'Power0.easeNone',
+      ease: 'Back.easeOut.config(4)',
       y: '-15px',
-      stagger:{ each: 0.15, from: 'random' }
+      stagger:{ each: 0.05, from: 'random' }
     });
   };
 
