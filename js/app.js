@@ -326,7 +326,7 @@ if (customerLogos) {
           i++;
     
           timeoutFn();
-        }, 5000);
+        }, 4000);
       };
   
       setTimeout(timeoutFn, listIndex * 150);
