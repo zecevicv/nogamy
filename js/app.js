@@ -373,7 +373,93 @@ if (customerLogos) {
     },
     onComplete: runFunctions
   });
+}
 
+/* #Customers Banner Animation
+    ======================================================= */
+const customerBannerLogos = document.querySelectorAll('.customers-page .banner .logo');
+
+if (customerBannerLogos) {
+  let runFunctions = () => {
+    tlFn();
+    logoSwitchFn();
+  }
+
+  let logoSwitchFn = () => {
+    const customerLogoList = document.querySelectorAll('.customers-page .banner .logo ul');
+  
+    customerLogoList.forEach((list, listIndex) => {
+      const listItems = list.querySelectorAll('li');
+
+      // Defining Active Element Index
+      let i = 0;
+      listItems.forEach((item, index) => {
+        if (item.classList.contains('active')) {
+          i = index;
+        }
+      });
+
+      // Timeout Function Body
+      let timeoutFnBody = () => {
+        if (i > 0) {
+          listItems[i-1].classList.remove('active');
+        }
+  
+        if (i == listItems.length) {
+          i = 0;
+          listItems[listItems.length - 1].classList.remove('active');
+        }
+  
+        listItems[i].classList.add('active');
+        i++;
+      };
+
+      // Use to switch to 5s logo switching time
+      let timeoutIndex = 0;
+      
+      let timeoutFn = () => {
+        if (timeoutIndex == 0) {
+          setTimeout(function(){ 
+            timeoutFnBody();
+            timeoutFn();
+            timeoutIndex = 1;
+          }, 500);
+        } else {
+          setTimeout(function(){ 
+            timeoutFnBody();
+            timeoutFn();
+          }, 5000);
+        }
+      };
+  
+      // Initial calling of the switching function
+      // Used to not switch all logos at the same time
+      setTimeout(timeoutFn, listIndex * 150);
+    });
+  }
+
+  let tlFn = () => {
+    let timeline = gsap.timeline({repeat: -1, yoyo: true});
+  
+    timeline.to(customerBannerLogos, {
+      duration: 1.5, 
+      ease: 'Elastic.easeOut.config(2, .5)',
+      y: '-10px',
+      stagger:{ each: 0.05, from: 'random' }
+    });
+  };
+
+  gsap.from(customerBannerLogos, {
+    duration: .8, 
+    ease:"Elastic.easeOut.config(2, .5)", 
+    opacity: 0, 
+    scale: .3,
+    stagger:{ each: 0.15, from: 'right' },
+    scrollTrigger: {
+      trigger: ".customers-page .banner",
+    },
+    onComplete: runFunctions
+  });
 }
 
 /* #AOS Animations

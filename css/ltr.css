@@ -162,6 +162,7 @@
 @media (min-width: 1024px) {
   .banner .container {
     padding-left: 7vw;
+    padding-right: 0;
   }
 }
 
